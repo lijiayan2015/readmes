@@ -3,7 +3,7 @@
  - oozie版本：**4.3.1**
  - JDK：**1.8**
  - HADOOP：**2.7.7**
- - hive：**hive**
+ - hive：**1.2.2**
  - pig：**0.16.0**
  - sqoop：**1.4.7**
  - spark：**2.3.0**
@@ -82,7 +82,7 @@
 ### 三、编译环境准备
    - 安装maven(可以使用最新版本)<br/>
      直接去maven官网下载linux版本的maven安装包,解压后配置好环境变量.
-     同时需要在conf目录下配置好其下载资源的localRepository,同时,如果嫌弃maven中心库下载东西慢的话,可以使用阿里云的mirror,但是不全.
+     同时需要在conf目录下配置好其下载资源的localRepository(需要特别说明:该目录对于下面用于编译oozie的用户需要有读写权限,否则会报oozie的parent project不能构建),同时,如果嫌弃maven中心库下载东西慢的话,可以使用阿里云的mirror,但是不全.
      ```
      <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
